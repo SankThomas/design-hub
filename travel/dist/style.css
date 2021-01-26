@@ -42,13 +42,15 @@ h2 {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #dddddd;
-  transition: height 0.5s;
+  transition: all 0.5s;
+  z-index: -99;
 }
 
 .navbar.open {
   height: 100vh;
   overflow: auto;
+  z-index: 99;
+  background-color: #ddd;
 }
 
 .navbar ul {
