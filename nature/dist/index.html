@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <title>Nature Landing Page</title>
+  </head>
+  <body>
+    <div class="menu">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <header class="header">
+      <div class="logo">
+        <h1>Mother Nature</h1>
+      </div>
+
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Nature</a></li>
+        <li><a href="#">Search</a></li>
+      </ul>
+    </header>
+
+    <section class="container">
+      <div class="overlay">
+        <h2>Mother nature has everything that you need.</h2>
+        <p>You just need to look in the right place.</p>
+        <form>
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="e.g nature"
+          />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </section>
+
+    <script>
+      const i = document.querySelector('.fa-bars')
+      const navbar = document.querySelector('ul')
+
+      i.addEventListener('click', () => {
+        navbar.classList.toggle('open')
+        i.classList.toggle('rotate')
+      })
+    </script>
+  </body>
+</html>

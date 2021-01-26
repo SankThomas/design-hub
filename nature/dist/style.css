@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.menu {
+  display: none;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+
+.header .logo h1 {
+  font-size: 46px;
+  color: #fff;
+}
+
+.header ul {
+  display: flex;
+}
+
+.header ul li {
+  margin: 0 20px;
+}
+
+.header ul li a {
+  color: #fff;
+  padding-bottom: 5px;
+}
+
+.header ul li a:hover {
+  border-bottom: 2px dotted #fff;
+}
+
+.container {
+  background: url('./pexels-photo-1420019.jpeg') no-repeat center/cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container .overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.container .overlay h2 {
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.container .overlay p {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.container .overlay form {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.container .overlay form input {
+  padding: 12px;
+  width: 600px;
+  font-size: 30px;
+  border-radius: 5px;
+  border: none;
+}
+
+.container .overlay form input::placeholder {
+  color: #000;
+}
+
+.container .overlay form button {
+  padding: 12px;
+  font-size: 30px;
+  border-radius: 0 5px 5px 0;
+  border: none;
+  margin-left: -20px;
+  background-color: #0dabb1;
+  color: #fff;
+  transition: background-color 0.5s;
+}
+
+.container .overlay form button:hover {
+  background-color: #083d3f;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .header .logo h1 {
+    font-size: 24px;
+  }
+
+  .header ul li {
+    margin: 0 10px;
+  }
+
+  .container .overlay {
+    padding: 0 30px;
+  }
+
+  .container .overlay h2 {
+    text-align: center;
+  }
+
+  .container .overlay form {
+    max-width: 500px;
+  }
+
+  .container .overlay form input {
+    width: auto;
+  }
+
+  .container .overlay form input,
+  .container .overlay form button {
+    display: block;
+    width: 100%;
+  }
+
+  .container .overlay form button {
+    margin: 10px 0 0 0;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 640px) {
+  .menu {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    display: block;
+    color: #fff;
+    font-size: 24px;
+    z-index: 999;
+    cursor: pointer;
+  }
+
+  .menu i {
+    transition: transform 0.5s;
+  }
+
+  .menu i.rotate {
+    transform: rotate(360deg);
+  }
+
+  .header ul {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    transition: all 0.5s;
+    padding: 50px 0 0;
+    text-align: right;
+  }
+
+  .header ul.open {
+    height: 100vh;
+    overflow: auto;
+    background-color: #111827;
+  }
+
+  .header ul li {
+    margin: 30px;
+  }
+
+  .header ul li a {
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+}
