@@ -1,5 +1,5 @@
 .showcase {
-  background: url('./images/coffee-hero.jpeg') no-repeat right/cover;
+  background: url('./images/coffee-hero-mobile.png') no-repeat right/cover;
   height: 750px;
 }
 
@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: center;
   height: 750px;
+  background-color: rgba(95, 55, 2, 0.5);
 }
 
 .btn {
@@ -21,3 +22,13 @@
   background-color: transparent;
   color: rgb(190, 110, 6);
 }
+
+@media (min-width: 640px) {
+  .showcase {
+    background: url('./images/coffee-hero.jpeg') no-repeat center/cover;
+  }
+}
+
+/* @media (min-width: 768px) {
+
+} */
