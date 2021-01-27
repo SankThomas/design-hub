@@ -1,0 +1,23 @@
+.showcase {
+  background: url('./images/coffee-hero.jpeg') no-repeat right/cover;
+  height: 750px;
+}
+
+.showcase .overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 750px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 2px solid rgb(190, 110, 6);
+  transition: background-color 0.4s;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: rgb(190, 110, 6);
+}
