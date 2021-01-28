@@ -1,0 +1,21 @@
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.hero {
+  background: url('./images/hero-mobile.png') no-repeat center/cover;
+  height: 750px;
+  padding: 325px 30px;
+}
+
+.hero .overlay {
+  background-color: rgba(114, 159, 218, 0.5);
+}
+
+.btn:hover {
+  letter-spacing: 5px;
+}
