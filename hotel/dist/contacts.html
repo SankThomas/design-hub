@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Hotel Website" />
+    <meta
+      name="keywords"
+      content="Hotel Website, Hotels, hotel booking, hotels in Nairobi, 5-star hotels in Nairobi, top rated hotels in Nairobi"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contacts.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <title>Contacts | 5 Start Hotel in Nairobi</title>
+  </head>
+  <body>
+    <!-- Back to top button -->
+
+    <header class="header" id="header">
+      <div class="logo">
+        <h2>
+          <span>Tsb</span>
+          Hotels
+        </h2>
+      </div>
+
+      <nav class="navbar" id="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contacts.html">Contact Us</a></li>
+          <li><a href="book.html" class="action">Book Now</a></li>
+        </ul>
+      </nav>
+
+      <div class="menu-btn" id="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+
+    <!-- Contacts showcase -->
+    <section class="showcase contacts-showcase">
+      <div class="overlay">
+        <h1>Contact Us</h1>
+        <div class="underline"></div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="form">
+      <div>
+        <h3>Send us a message. We're here to listen</h3>
+        <div class="underline"></div>
+        <p>All fields are required</p>
+      </div>
+
+      <form method="post" netlify>
+        <input
+          type="text"
+          name="firstName"
+          id="firstName"
+          placeholder="First name"
+          required
+        />
+        <input
+          type="text"
+          name="lastName"
+          id="lastName"
+          placeholder="Last name"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Your email address"
+          required
+        />
+        <textarea
+          name="textarea"
+          id="textarea"
+          cols="30"
+          rows="10"
+          placeholder="Enter your message"
+          required
+        ></textarea>
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="logo">
+        <h2>TsbHotels</h2>
+      </div>
+
+      <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacts.html">Contact Us</a></li>
+      </ul>
+
+      <ul class="social">
+        <li>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-pinterest"></i></a>
+        </li>
+      </ul>
+
+      <div class="copyright">
+        <p>&copy; TSBHotels, 2021</p>
+      </div>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

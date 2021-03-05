@@ -1,0 +1,55 @@
+.blog {
+  background: url("./images/room-11.jpg") no-repeat bottom/cover;
+  height: 400px;
+}
+
+.blog .overlay {
+  height: 400px;
+}
+
+.blog-posts {
+  padding: 50px 20px;
+}
+
+.blog-posts .posts {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.blog-posts .posts .post {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s;
+}
+
+.blog-posts .posts .post:hover {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.blog-posts .posts .post h3 {
+  margin-bottom: 10px;
+}
+
+.blog-posts .posts .post p {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .blog-posts .posts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .blog-posts {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .blog-posts .posts {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
